@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class lottoSimulator {
+public class LottoSimulator {
 
     public static void main(String[] args) {
 

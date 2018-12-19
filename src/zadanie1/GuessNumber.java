@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class guessNumber {
+public class GuessNumber {
 
     public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class guessNumber {
 
     }
 
-    static int getInt() {
+    public static int getInt() {
         int input = 0;
         Scanner scan = new Scanner(System.in);
         System.out.print("Zgadnij liczbę: ");
@@ -29,7 +29,6 @@ public class guessNumber {
         return input;
     }
 
-
     static void guessNumber () {
         Random r = new Random();
         int toGuess = r.nextInt(100) + 1;
@@ -39,10 +38,9 @@ public class guessNumber {
             input = getInt();
             if (input < toGuess) {
                 System.out.println("Za mało!");
-            } else if (input > toGuess){
+            } else if (input > toGuess) {
                 System.out.println("Za dużo!");
             }
-
         }
         System.out.println("Zgadłeś!");
 
